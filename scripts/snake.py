@@ -1,12 +1,11 @@
-import math
-import random
 import pygame
+import random
 import tkinter as tk
 from tkinter import messagebox
  
 class cube(object):
-    rows = 20
-    w = 500
+    rows = 40
+    w = 800
     def __init__(self,start,dirnx=1,dirny=0,color=(255,255,255)):
         self.pos = start
         self.dirnx = 1
@@ -114,9 +113,8 @@ def drawGrid(w, rows, surface):
     for l in range(rows):
         x = x + sizeBtwn
         y = y + sizeBtwn
- 
-        pygame.draw.line(surface, (0,0,0), (x,0),(x,w))
-        pygame.draw.line(surface, (0,0,0), (0,y),(w,y))
+        pygame.draw.line(surface, (10,10,10), (x,0),(x,w))
+        pygame.draw.line(surface, (10,10,10), (0,y),(w,y))
        
 def redrawWindow(surface):
     global rows, width, s, snack
@@ -147,8 +145,8 @@ def message_box(subject, content):
         pass
 def main():
     global width, rows, s, snack
-    width = 500
-    rows = 20
+    width = 800
+    rows = 40
     win = pygame.display.set_mode((width, width))
     s = snake((255,255,255), (10,10))
     snack = cube(randomSnack(rows, s), color=(0,0,255))
