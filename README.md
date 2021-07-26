@@ -1,5 +1,1 @@
-t'as besoin d'installer le Framework de pygame et python3
-/ ..... /
-you need to install the library of pygame if you want this to work 
-
-thank you! joseph
+youtube channel : https://www.youtube.com/channel/UCjPk9YDheKst1FlAf_KSpyA
